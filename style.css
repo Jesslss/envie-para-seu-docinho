@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #bc4044, #fad0c4);
+    font-family: 'Arial', sans-serif;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 60px; 
+}
+h2 {
+    font-size: 2em;
+    color: #2b0b0d;
+    margin: 15px 0;
+}
+
+.gif-container {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.gif {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.btn-group {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    width: 45%;
+    height: 50px;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.yes-btn {
+    background: #ff6f61;
+    box-shadow: 0 4px 10px rgba(255, 111, 97, 0.5);
+}
+
+.no-btn {
+    background: #ffcc00;
+    color: black;
+    box-shadow: 0 4px 10px rgba(255, 204, 0, 0.5);
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+footer ul li {
+    display: inline;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+footer ul li img {
+    width: 20px;
+    height: 20px;
+    filter: invert(100%);
+}
